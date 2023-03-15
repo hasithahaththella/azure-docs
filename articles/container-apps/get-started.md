@@ -83,7 +83,7 @@ az containerapp create \
   --environment $CONTAINERAPPS_ENVIRONMENT \
   --image mcr.microsoft.com/azuredocs/containerapps-helloworld:latest \
   --target-port 80 \
-  --ingress 'external' \
+  --ingress external \
   --query properties.configuration.ingress.fqdn
 ```
 
